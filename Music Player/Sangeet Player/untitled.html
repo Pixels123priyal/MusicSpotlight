@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Music player</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="height: 674px;color: var(--bs-blue);margin: 0px;text-align: center;background: linear-gradient(60deg, var(--bs-cyan), var(--bs-teal) 38%, var(--bs-yellow) 100%), var(--bs-gray-500);">
+    <div style="width: 761.6px;"></div>
+    <nav class="navbar navbar-light navbar-expand-md" id="Navbar">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="color: var(--bs-gray-200);font-size: 26px;"><strong>Music Spotlight</strong></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" id="HomeButton" href="index.html" style="color: var(--bs-gray);">Home</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="untitled-1.html" style="color: var(--bs-gray);">Login</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-xxl-5" style="width: 550.325px;">
+            <h1 style="text-align: left;">Song List</h1>
+            <div class = "songItemPlay" id = "1" style="border-style: solid;border-color: var(--bs-white);border-radius: 54px;text-align: left;width: 559.325px;background: linear-gradient(138deg, var(--bs-pink) 0%, var(--bs-danger) 31%, var(--bs-indigo) 83%);"><img src="assets/img/NCS-1280x720.jpg" style="width: 75px;margin: 11px;border-radius: 36px;"><span style="font-size: 35px;margin: 0px;">Mortals</span></div>
+            <div class = "songItemPlay" id = "2" style="border-style: solid;border-color: var(--bs-white);border-radius: 54px;text-align: left;width: 559.325px;background: linear-gradient(138deg, var(--bs-pink) 0%, var(--bs-danger) 31%, var(--bs-indigo) 83%);"><img src="assets/img/NCS-1280x720.jpg" style="width: 75px;margin: 11px;border-radius: 36px;"><span style="font-size: 35px;margin: 0px;">Huma Huma</span></div>
+            <div class = "songItemPlay" id = "3" style="border-style: solid;border-color: var(--bs-white);border-radius: 54px;text-align: left;width: 559.325px;background: linear-gradient(138deg, var(--bs-pink) 0%, var(--bs-danger) 31%, var(--bs-indigo) 83%);"><img src="assets/img/NCS3.jpg" style="width: 75px;margin: 11px;border-radius: 36px;"><span style="font-size: 35px;margin: 0px;">Invincible</span></div>
+            <div class = "songItemPlay" id = "4" style="border-style: solid;border-color: var(--bs-white);border-radius: 54px;text-align: left;width: 559.325px;background: linear-gradient(138deg, var(--bs-pink) 0%, var(--bs-danger) 31%, var(--bs-indigo) 83%);"><img src="assets/img/NCS4.jpg" style="width: 75px;margin: 11px;border-radius: 36px;"><span style="font-size: 35px;margin: 0px;">My Heart</span></div>
+            <div class = "songItemPlay" id = "5" style="border-style: solid;border-color: var(--bs-white);border-radius: 54px;text-align: left;width: 559.325px;background: linear-gradient(138deg, var(--bs-pink) 0%, var(--bs-danger) 31%, var(--bs-indigo) 83%);"><img src="assets/img/NCS5.jpg" style="width: 75px;margin: 11px;border-radius: 36px;"><span style="font-size: 35px;margin: 0px;">Heroes Tonight</span></div>
+            <div class = "songItemPlay" id = "6" style="border-style: solid;border-color: var(--bs-white);border-radius: 54px;text-align: left;width: 559.325px;background: linear-gradient(138deg, var(--bs-pink) 0%, var(--bs-danger) 31%, var(--bs-indigo) 83%);"><img src="assets/img/NCS6.jpg" style="width: 75px;margin: 11px;border-radius: 36px;"><span style="font-size: 35px;margin: 0px;">On and On</span></div>
+        </div>
+        <div class="col-xxl-6">
+            <div style="height: 374px;background: var(--bs-gray-400);width: 762.6px;margin-top: 0px;margin-left: 70px;border-radius: 60px;">
+                <div class="card" style="height: 370.438px;margin-top: 80px;border-radius: 54px;background: linear-gradient(178deg, black, white);">
+                    <div class="card-body" style="border-radius: 0px;">
+                        <h4 class="card-title" style="color: var(--bs-gray-500);">Song Playing&nbsp;</h4>
+                        <p class="card-text"></p><button class="btn btn-primary" id="previous" type="button" style="margin-left: 0px;border-top-left-radius: 20px;border-bottom-left-radius: 20px;width: 86.65px;margin-right: 30px;">Previous</button><img id="masterImage" src="assets/img/NCS-1280x720.jpg" style="height: 256px;width: 404.8px;border-radius: 54px;border-style: solid;"><button class="btn btn-primary" id="next" type="button" style="width: 86.65px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;margin-left: 30px;">Next</button>
+                        <h1 id="masterSongName">Mortals</h1>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="margin-bottom: 0px;margin-top: 37px;height: 147.2px;background: linear-gradient(var(--bs-blue), var(--bs-primary) 46%, var(--bs-cyan));">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item" id="3"></li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <div class="container">
+                <div class="row" style="margin-right: 0px;margin-left: -90px;">
+                    <div class="col-md-6" style="width: 55px;"><button class="btn btn-primary" type="button" style="border-radius: 54px;border-style: double;height: 55px;width: 56px;background: var(--bs-info);"><i class="far fa-2x fa-play-circle" id="masterPlay"></i></button></div>
+                    <div class="col-md-6" style="width: 1330px;"><input class="form-range" type="range" id="myProgressBar" min="0" value="0" max="100" name="range" style="margin-top: 14px;"></div>
+                </div>
+            </div>
+            <h4 class="card-title"></h4>
+            <p class="card-text"></p>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+
+<!--  <i class="far fa-pause-circle" style="font-size: 26px;color: var(--bs-light);"></i>  -->
